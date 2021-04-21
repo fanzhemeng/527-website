@@ -169,6 +169,21 @@ body {
 	color: #424242
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 50%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .contact {
 	width: 100%;
 	min-height: 500px;
@@ -595,7 +610,7 @@ body {
 	width: 100%;
 	min-height: 455px;
 	padding: 70px 0;
-	background: #323232 url(../images/promo-bg.jpg) center 0 no-repeat;
+	background: #323232 url(../images/bg.jpg) center 0 no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -719,7 +734,7 @@ body {
 	display: inline-block;
 	position: relative;
 	width: 220px;
-	margin: 0 30px 30px;
+	margin: 0 10px 30px;
 	background-color: #fff
 }
 
@@ -731,12 +746,13 @@ body {
 	display: block;
 	width: 100%;
 	height: 190px;
-	padding: 15px 10px
+	padding: 50px 10px
 }
 
 .team__member-name {
-	margin-bottom: 5px;
-	font-size: 18px
+	margin-bottom: 20px;
+	font-size: 24px;
+	font-weight: bold
 }
 
 .team__member-role {
@@ -782,10 +798,10 @@ body {
 
 .team__member-icon {
 	display: block;
-	width: 45px;
+	width: 50px;
 	height: 50px;
-	margin-left: -3px;
-	color: #fff;
+	margin-left: 75px;
+	color: #000;
 	-webkit-transition: all .3s;
 	-o-transition: all .3s;
 	transition: all .3s;
@@ -799,8 +815,12 @@ body {
 .team__member-icon:before {
 	display: block;
 	font-family: FontAwesome;
-	font-size: 30px;
+	font-size: 50px;
 	line-height: 50px
+}
+
+.team__member-icon.linkedin:before {
+	content: "\f08c"
 }
 
 .team__member-icon.fb:before {
